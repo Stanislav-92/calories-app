@@ -1,16 +1,21 @@
 <mat-toolbar>
   <div class="container-fluid">
     <div class="row d-flex justify-content-between">
+
       <div class="col-2 d-flex justify-content-start authentication">
         <button mat-icon-button color="accent" class="home-button" (click)="onGoToPrimary()" [ngStyle]="{ 'color': setActive ? '#ffff80' : '#fff' }">
           <mat-icon>home</mat-icon>
         </button>
-        <a routerLink="/login" routerLinkActive="active">Login</a>
-        <a routerLink="/signup" routerLinkActive="active">Signup</a>
+        <a *ngIf="!isAuthenticated" routerLink="/login" routerLinkActive="active">Login</a>
+        <a *ngIf="!isAuthenticated" routerLink="/signup" routerLinkActive="active">Signup</a>
+        <a *ngIf="isAuthenticated" routerLink="/calories" routerLinkActive="active">Calories</a>
       </div>
+
       <div class="col-2 d-flex justify-content-end support">
-        <a routerLink="/contact-us" routerLinkActive="active" >Contact us</a>
+        <a routerLink="/contact-us" routerLinkActive="active">Contact us</a>
+        <a *ngIf="isAuthenticated" class="logout" (click)="onLogout()">Logout</a>
       </div>
+
     </div>
   </div>
 </mat-toolbar>

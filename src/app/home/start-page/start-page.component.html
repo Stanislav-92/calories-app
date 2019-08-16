@@ -1,13 +1,16 @@
 <!-- <div class="welcome" fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="center center" fxLayoutGap.gt-md="20px"> -->
 <h1>Welcome to the calories app!</h1>
-<div class="welcome" fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-md="row" fxLayoutGap="30px" fxLayoutAlign.gt-md="space-around start">
+<section *ngIf="isAuthenticated" class="app">
+  <h3>Start using app!</h3>
+  <button class="btn btn-dark" (click)="goToCalories()">Go to calories</button>
+</section>
+<div class="welcome" fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-md="row" fxLayoutGap="30px" fxLayoutGap.xs="10px" fxLayoutGap.md="10px" fxLayoutAlign.gt-md="space-around start">
   <section>
     <h3>We offer:</h3>
     <p>- Information of how many calories products you consume every day contain.</p>
-    <p>- Opportunity to create your menu and count the quantity of calories.</p>
     <p>- To save your daily dishes and see the statistics of personal consumption.</p>
   </section>
-  <section>
+  <section class="last">
     <h3>Stay with us!</h3>
     <p>Be sure you passed the registration process and signed in.</p>
   </section>

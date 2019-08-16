@@ -1,10 +1,42 @@
+@media screen and (max-width: 599px) {
+  section.last {
+    padding-bottom: 50px;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  section.last {
+    padding-bottom: 50px;
+  }
+}
+
 section {
   padding: 10px;
+  text-align: center;
+}
+
+section.app {
+  margin: 5% auto;
+}
+
+section.app h3 {
+  margin-bottom: 20px;
+}
+
+section.app button {
+  background: #212121;
+}
+
+section.app button:hover {
+  background-color: #fff !important;
+  color: #212529 !important;
+  border: 1px solid #212121;
 }
 
 h1 {
   text-align: center;
-  margin: 3% auto 10% auto;
+  margin: 3% auto 5% auto;
 }
 
 .items {
@@ -13,7 +45,6 @@ h1 {
 
 .welcome {
   text-align: center;
-  /* height: 50%; */
 }
 
 .mat-toolbar-row, .mat-toolbar-single-row {
