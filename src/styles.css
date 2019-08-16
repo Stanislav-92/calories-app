@@ -9,3 +9,12 @@ html, body {
 body {
   margin: 0;
 }
+
+.mat-snack-bar-container {
+  background-color: #212121;
+  color: #ff0000;
+}
+
+.mat-snack-bar-container button {
+  color: #fff;
+}

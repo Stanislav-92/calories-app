@@ -1,0 +1,88 @@
+@media screen and (max-width: 599px) {
+  .form-wrapper form {
+    padding: 0 30px;
+    margin: 30px 0;
+    height: 100% !important;
+  }
+
+  .form-wrapper {
+    height: auto !important;
+  }
+
+  .mat-card-title {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .form-wrapper form {
+    padding: 0 80px;
+    margin: 50px 0;
+    height: 100% !important;
+  }
+
+  .form-wrapper {
+    height: auto !important;
+  }
+
+  .mat-card-title {
+    margin-bottom: 30px;
+  }
+
+}
+
+div.form-group {
+  height: 50px;
+}
+
+.mat-card {
+  background: #212121;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.mat-card-title {
+  font-size: 22px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.form-wrapper {
+  height: 90%;
+}
+
+.form-wrapper form {
+  height: 600px;
+}
+
+mat-card-actions button {
+  margin-left: 8px;
+  background-color: #212121;
+  border-color: #fff;
+}
+
+mat-card-actions button:hover,
+mat-card-actions button:active,
+mat-card-actions button:focus {
+  background-color: #fff !important;
+  color: #495057 !important;
+  border: 1px solid #212121 !important;
+  box-shadow: none !important;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 0 0.1rem rgba(255,255,128,1);
+  border-color: #ffff80;
+}
+
+.error-helper {
+  font-style: italic;
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+.invalid {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 0.1rem rgba(255,0,0,1);
+}
